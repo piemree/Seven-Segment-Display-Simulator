@@ -1,0 +1,65 @@
+.seven-segment-display {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+
+    $segment-color: red;
+    $short-side: 20px;
+    $long-side : 90px;
+
+    .segment {
+        background-color: black;
+        color: white;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &.on {
+            background-color: $segment-color;
+        }
+
+        &.a {
+            width: $long-side;
+            height: $short-side;
+        }
+
+        &.b {
+            width: $short-side;
+            height: $long-side;
+        }
+
+        &.c {
+            width: $short-side;
+            height: $long-side;
+        }
+
+        &.d {
+            width: $long-side;
+            height: $short-side;
+        }
+
+        &.e {
+            width: $short-side;
+            height: $long-side;
+        }
+
+        &.f {
+            width: $short-side;
+            height: $long-side;
+        }
+
+        &.g {
+            width: $long-side;
+            height: $short-side;
+        }
+    }
+}
